@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rotate 3d</title>
+    <style>
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .bg {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        #rotateX {
+            -moz-transform: perspective(800px) rotateX(45deg);
+            -ms-transform: perspective(800px) rotateX(45deg);
+            -o-transform: perspective(800px) rotateX(45deg);
+            -webkit-transform: perspective(800px) rotateX(45deg);
+            transform: perspective(800px) rotateX(45deg);
+        }
+
+        #rotateY {
+            -moz-transform: perspective(800px) rotateY(45deg);
+            -ms-transform: perspective(800px) rotateY(45deg);
+            -o-transform: perspective(800px) rotateY(45deg);
+            -webkit-transform: perspective(800px) rotateY(45deg);
+            transform: perspective(800px) rotateY(45deg);
+        }
+
+        #rotateZ{
+            -moz-transform: perspective(800px) rotateZ(45deg);
+            -ms-transform: perspective(800px) rotateZ(45deg);
+            -o-transform: perspective(800px) rotateZ(45deg);
+            -webkit-transform: perspective(800px) rotateZ(45deg);
+            transform: perspective(800px) rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+<div class="bg">
+    <img id="rotateX" src="img/test-transform.png" alt="transform"/>
+</div>
+<div class="bg">
+    <img id="rotateY" src="img/test-transform.png" alt="transform"/>
+</div>
+<div class="bg">
+    <img id="rotateZ" src="img/test-transform.png" alt="transform"/>
+</div>
+
+
+
+</body>
+</html>

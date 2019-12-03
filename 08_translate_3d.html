@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translate 3d</title>
+    <style>
+        
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .bg {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        #translateX {
+            -moz-transform: translateX(30px);
+            -ms-transform: translateX(30px);
+            -o-transform: translateX(30px);
+            -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+        }
+
+        #translateY {
+            -moz-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+            -o-transform: translateY(30px);
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+        }
+
+        #translateZ{
+            /* perspective(800px) - определяет расстояние между зрителем и поверхностью на которой происходит трансформация */
+            -moz-transform: perspective(800px) translateZ(80px);
+            -ms-transform: perspective(800px) translateZ(80px);
+            -o-transform: perspective(800px) translateZ(80px);
+            -webkit-transform: perspective(800px) translateZ(80px);
+            transform: perspective(800px) translateZ(80px);
+        }
+    </style>
+</head>
+<body>
+<div class="bg">
+    <img id="translateX" src="img/test-transform.png" alt="transform"/>
+</div>
+<div class="bg">
+    <img id="translateY" src="img/test-transform.png" alt="transform"/>
+</div>
+<div class="bg">
+    <img id="translateZ" src="img/test-transform.png" alt="transform"/>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform origin</title>
+    <style>
+
+        img {
+            width: 100px;
+            height: 100px;
+            -moz-transition: all 3s;
+            -o-transition: all 3s;
+            -webkit-transition: all 3s;
+            transition: all 3s;
+
+            -moz-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            -o-transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; /* определение точки относительно которой будет происходить вращение */
+        }
+        
+        img:hover {
+
+
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); /* вращение элемента относительно центра на 45 градусов по часовой стрелке */
+        }
+    </style>
+</head>
+<body>
+    <img src="img/test-transform.png" alt="transform"/>
+</body>
+</html>
